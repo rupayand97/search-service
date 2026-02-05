@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.get("/health", (req, res) => {
-  res.send("OK");
+app.get("/", (req, res) => {
+  res.send("test route");
 });
 
 app.use("/api/v1/product", productRoutes);
